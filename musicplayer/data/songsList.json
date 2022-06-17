@@ -1,0 +1,97 @@
+{
+  "wpcontentquery":{
+     "error":0,
+     "wpcontentlist": [
+      {
+       "itemid": 1,
+       "itemname": "海来阿木 - 三生三幸",
+       "fileurl": "data/music/三生三幸-海来阿木.flac",
+       "lrcurl": "",
+       "ct": 9,
+       "status": 0,
+       "alias": [],
+       "rtype": 0,
+       "ftype": 0,
+       "mvid": 0,
+       "fee": 8,
+       "rUrl": null,
+       "mark": 64
+     },
+     {
+      "itemid": 2,
+      "itemname": "肖战 - 光点",
+      "fileurl": "data/music/光点 - 肖战.flac",
+      "lrcurl": "",
+      "ct": 9,
+      "status": 0,
+      "alias": [],
+      "rtype": 0,
+      "ftype": 0,
+      "mvid": 0,
+      "fee": 8,
+      "rUrl": null,
+      "mark": 64
+    },
+    {
+      "itemid": 3,
+      "itemname": "肖战 - 无羁(《陈情令》电视剧主题曲",
+      "fileurl": "data/music/肖战 - 无羁(《陈情令》电视剧主题曲.flac",
+      "lrcurl": "",
+      "ct": 9,
+      "status": 0,
+      "alias": [],
+      "rtype": 0,
+      "ftype": 0,
+      "mvid": 0,
+      "fee": 8,
+      "rUrl": null,
+      "mark": 64
+    },
+    {
+      "itemid": 4,
+      "itemname": "摩登兄弟刘宇宁 - 凌云寂",
+      "fileurl": "data/music/摩登兄弟刘宇宁 - 凌云寂",
+      "lrcurl": "",
+      "ct": 9,
+      "status": 0,
+      "alias": [],
+      "rtype": 0,
+      "ftype": 0,
+      "mvid": 0,
+      "fee": 8,
+      "rUrl": null,
+      "mark": 64
+    },
+    {
+      "itemid": 5,
+      "itemname": "那英&肖战 - 军港之夜(Live)",
+      "fileurl": "data/music/那英&肖战 - 军港之夜(Live)",
+      "lrcurl": "",
+      "ct": 9,
+      "status": 0,
+      "alias": [],
+      "rtype": 0,
+      "ftype": 0,
+      "mvid": 0,
+      "fee": 8,
+      "rUrl": null,
+      "mark": 64
+    },
+    {
+      "itemid": 6,
+      "itemname": "摩登兄弟刘宇宁 - 梦华《梦华录》电视剧片头曲",
+      "fileurl": "data/music/摩登兄弟刘宇宁 - 梦华《梦华录》电视剧片头曲",
+      "lrcurl": "",
+      "ct": 9,
+      "status": 0,
+      "alias": [],
+      "rtype": 0,
+      "ftype": 0,
+      "mvid": 0,
+      "fee": 8,
+      "rUrl": null,
+      "mark": 64
+    }
+   ]
+ }
+}

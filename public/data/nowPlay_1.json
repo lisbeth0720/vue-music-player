@@ -1,0 +1,19 @@
+{
+  "error": 0,
+  "detail":
+    {
+      "id": 1,
+      "itemname": "海来阿木 - 三生三幸",
+      "fileurl": "data/music/海来阿木 - 三生三幸.flac",
+      "lrcurl": "",
+      "ct": 9,
+      "status": 0,
+      "alias": [],
+      "rtype": 0,
+      "ftype": 0,
+      "mvid": 0,
+      "fee": 8,
+      "rUrl": null,
+      "mark": 64
+    }
+}
