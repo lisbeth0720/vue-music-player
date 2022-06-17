@@ -113,7 +113,7 @@ export default {
     return {
       showMusicList: false,
       noid: itemid,
-      cid: 0,
+      cid: 0,//歌曲列表中数组中的索引。默认是第一个
       orderid: 0,
       randomid: 0,
       playType: "0",
@@ -143,13 +143,16 @@ export default {
     changeShowShadow(res) {
       this.showMusicList = res;
     },
+
     //接受点击播放的音频id
     sendId(res) {
       this.noid = res;
       this.$refs.playerref.getNowInfo(this.noid);
     },
+
     //接受点击播放的音频index
     sendcid(res) {
+      //console.log(res)
       this.cid = res[0];
       this.orderid = res[1];
       this.randomid = res[2];
@@ -158,10 +161,12 @@ export default {
       }, 1000)
       //this.$refs.playerref.getNowInfo(this.noid);
     },
+    //点击上一首-下一首触发的事件
     playToList(playIndex, str) {
-      console.log(playIndex)
+      //需要研究下面这个事件
       this.$refs.playListRef.playToList(playIndex, str);
     },
+    //播放的类型（单曲循环还是列表循环还是随机循环
     sendType(res) {
       this.playType = res;
       this.$refs.playListRef.changeListOrder(res);

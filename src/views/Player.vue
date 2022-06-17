@@ -344,25 +344,46 @@ export default {
         },
         //下一首
         nextMusic(){
-            if(this.playCircleStatus==0||this.playCircleStatus==1){
-                this.listcid=this.orderid;
-                
-            }else if(this.playCircleStatus==2){
-                this.listcid=this.randomid;
+            //由于listcid是父组件传过来的值在子组件里是不能修改的，所以下面代码不可行，可以通过发送事件让父组件修改
+            //if(this.playCircleStatus==0||this.playCircleStatus==1){
+                //this.listcid=this.orderid;      
+           // }else if(this.playCircleStatus==2){
+                //this.listcid=this.randomid;
+            //}
+            //var nextindex=this.listcid+1;
+           // this.$emit('playToList',nextindex,"add");
+
+           //更改后的代码
+            let nextIndex = 1;
+            if (this.playCircleStatus == 0 || this.playCircleStatus == 1){//单机循环、顺序循环
+                nextIndex = this.listcid + 1;
+            }else{//随机播放
+                nextIndex = this.randomid + 1;
             }
-            var nextindex=this.listcid+1;
-            this.$emit('playToList',nextindex,"add");
+            console.log(nextIndex)
+            this.$emit('playToList', nextIndex, "add");
         },
         //上一首
         beforeMusic(){
-            if(this.playCircleStatus==0||this.playCircleStatus==1){
-                this.listcid=this.orderid;
+            //由于listcid是父组件传过来的值在子组件里是不能修改的，所以下面代码不可行，可以通过发送事件让父组件修改
+            // if(this.playCircleStatus==0||this.playCircleStatus==1){
+            //     console.log(this.orderid)
+            //     this.listcid=this.orderid;
                 
-            }else if(this.playCircleStatus==2){
-                this.listcid=this.randomid;
+            // }else if(this.playCircleStatus==2){
+            //     this.listcid=this.randomid;
+            // }
+            // var nextindex=this.listcid-1;
+            // this.$emit('playToList',nextindex,"atten");
+
+            //更改后的代码
+            let nextIndex2 = 1;
+            if (this.playCircleStatus == 0 || this.playCircleStatus == 1) {//单机循环、顺序循环
+                nextIndex2 = this.listcid - 1;
+            } else {//随机播放
+                nextIndex2 = this.randomid - 1;
             }
-            var nextindex=this.listcid-1;
-            this.$emit('playToList',nextindex,"atten");
+            this.$emit('playToList', nextIndex2, "atten");
         },
         //时间转换
         duration(time){
